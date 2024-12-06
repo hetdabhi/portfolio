@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Dabhi - Portfolio</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <div id="home" class="hero">
+        <h1>HELLO</h1>
+        <h2>Welcome to My Portfolio</h2>
+        <img src="E:/portfolio/Photo.jpg" alt="Het Dabhi">
+        <b><h3>HET DABHI</h3></b>
+        <h4>Software Developer</h4>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Het Dabhi, a passionate software developer with a strong interest in creating web applications that are user-friendly and efficient. I specialize in full-stack web development using modern technologies such as HTML, CSS, JavaScript, React, and Node.js.</p>
+        <p>When I’m not coding, I enjoy learning new technologies, contributing to open-source projects, and solving real-world problems through programming.</p>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <h2>My Projects</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="E:/portfolio/11.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="E:/portfolio/12.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="E:/portfolio/13.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Thank You Section -->
+    <div id="thank-you">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent. I will get back to you soon!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Het Dabhi. All Rights Reserved. <a href="https://github.com/hetdabhi">GitHub</a></p>
+    </footer>
+
+    <!-- JavaScript to handle form submission and show thank you message -->
+    <script>
+        const form = document.getElementById('contact-form');
+        const thankYouSection = document.getElementById('thank-you');
+        const contactSection = document.getElementById('contact');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form submission (you can handle actual form submission here)
+
+            // Hide the contact form
+            contactSection.style.display = 'none';
+
+            // Show the thank you message
+            thankYouSection.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
